@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NATURA</title>
+    <link rel="stylesheet" href="style4.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+     
+</head>
+    <body>
+        <section id="banner">
+            <img src="images/logo.png" class="logo">
+            <div class="banner-text">
+                <h1>COMUNIUNEA CU NATURA</h1>
+                
+            </div>
+        </section>
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="index.html"><span></span>ACASĂ</a> </li>
+                    <li><a href="Tarot.html"><span></span>TAROT</a></li>
+                    <li><a href="Magie.html"><span></span>MAGIE</a></li>
+                    <li><a href="#"><span></span>ALTELE</a>
+                        <ul>
+                            <li><a href="Natura.html"><span></span>Comuniunea cu natura</a></li>
+                            <li><a href="Cristale.html"><span></span>Cristale</a></li>
+                            
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="images/menu.png" id="menu">
+        </div>
+        <section id="info">
+            <div class="info-box">
+                
+                <p>Această comuniune cu natura este deobicei realzată de aşa numitele vrăjitoare verzi (green witch). Vrăjitoarea verde îmbrățișează natura trăgând pe energiile de pe pământ și ale lucrurilor neîmblânzite. Ea comună cu pământul, cu pietre și pietre prețioase. Ea se bazează pe plante, flori și ierburi, apelând la natură pentru îndrumare și respectă fiecare ființă vie. Ea este adevărata definiție a legăturii cu natura. Vrăjitoarea verde înțelege că pământul încorporează planeta și toate ființele vii de pe ea, inclusiv animale, plante și oameni. Ea înțelege că umanitatea afectează lumea naturală, nu numai prin modul în care o tratăm, ci și prin sentimentele și energiile indivizilor. Este probabil strămoșele spirituale ale vrăjitoarelor verzi moderne care au ales să trăiască în afară de centrul vieții comunitare. Deși probabil că și-au făcut casele la marginea orașului, ei ar fi preferat mult să-și facă casele în natură. Căci este mai greu să auzi ce are de spus Pământul când ești înconjurat de agitația vieții aglomerate. <br> 
+                    Şi tu poţi deveni green witch. Iată câteva din "poţiunile" acestora pe care le poţi face chiar la tine acasă:    <br>     <br>
+                </p>
+                
+                <h2>Sare de baie purificatoare cu lavandă</h2>
+                
+                <div class="info-text">
+                    <div class="info-img">
+                        <img src="images/nat2.jpg" style="width:500px;height:400px" class="floatRight"  >
+                        </div>
+                    <p><br><br>Doreşti să te scapi de tot stresul acumulat şi să te resfeţi într-o baie divină? Această sare de baie este specială pentru tine! Nu numai că relaxează nervii, calmează mintea şi îmbrăţişează pielea, de asemenea elimină orice energie negativă din jurul tău. <br> Ingrediente: 300g sare de apă, 2 linguri de lavandă uscată, o lingură de rozmarin, o linguriţă de frunze de mentă uscată, 4 picături de ulei esenţial de lavandă.  <br> Se amestecă împreună toate ingredientele după care adaugi în cadă 3 linguri.</p>
+                </div>
+                <br>
+                <h2><br>Poţiune de trandafiri pentru inimile frânte<br></h2>
+                <div class="info-text">
+                    <div class="info-img">
+                        <img src="images/nat3.jpg" style="width:500px;height:400px" class="floatLeft">
+                        </div>
+                    <p> <br><br>Această poţiune este bunp pentru a calma nervii şi pentru a înlătura durerea inimii frânte. Funcţionează cel mai bine înainte de culcare, pentru a avea un somn liniştitor. <br>Ingrediente: un borcănel umplut 3/4 cu ulei de seminţe de struguri sau cu ulei de măsline, un vârf de linguriţă de busuioc uscat, 2 linguri de petale uscate de trandafiri, ulei esenţial de trandafir şi lavandă, un cuarţ roz. <br> Se pun toate ingredientele in borcanel mai putin cristalul care se pune peste borcanel. Se respira adanc de 3 ori, dupa care te dai cu uleiul respectiv pe incheietura mainii si deasupra inimii.</p>
+                </div>
+                </div>
+                </section>
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+            sideNav.style.right = "-250px"
+            menuBtn.onclick = function(){
+                if(sideNav.style.right == "-250px"){
+                    sideNav.style.right = "0";
+                    menu.src = "images/close.png";
+                }
+                else{
+                    sideNav.style.right = "-250px";
+                    menu.src = "images/menu.png";
+                }
+                
+            }
+            var scroll = new SmoothScroll('a[href*="#"]', {
+                speed: 1000,
+                speedAsDuration: true
+            });
+        </script>
+
+</html>
