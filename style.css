@@ -110,19 +110,22 @@ nav ul li a{
 #menuBtn{
     width: 50px;
     height: 50px;
-    background: #1a001a;
+    background: rgba(255, 240, 245, 0.258);
     text-align: center;
     position: fixed;
     right: 30px;
     top: 20px;
     border-radius: 3px;
+        border: 1px solid rgba(255, 240, 245, 0.443);
     z-index: 3;
     cursor: pointer;
 }
 #menuBtn img{
     width: 30px;
     margin-top: 10px;
+   
 }
+
 @media screen and (max-width: 770px){
     .banner-text h1{
         font-size: 44px;
@@ -380,6 +383,35 @@ hr{
 .footer-row p{
     line-height: 35px;
     color: lavenderblush;
+}
+
+.social-links{
+    right: 50%;
+        left: 50%;
+        text-align: center;
+}
+.social-links img {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid #ffff;
+    margin: 40px 5px 0;
+    color: lavenderblush;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.social-links img:hover {
+    background: mediumpurple;
+    color: plum;
+    transform: translateY(-7px);
+}
+.social-links p{
+   color: rgba(230, 230, 250, 0.619);
+   position:relative;
+text-align: center;
+margin-top: 20px;
 }
 
 
